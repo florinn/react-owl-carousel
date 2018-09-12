@@ -305,7 +305,10 @@ OwlCarousel.propTypes = {
 		autoplay: PropTypes.bool,
 		autoplayTimeout: PropTypes.number,
 		autoplayHoverPause: PropTypes.bool,
-		autoplaySpeed: PropTypes.bool,
+		autoplaySpeed: PropTypes.oneOfType([
+			PropTypes.bool,
+			PropTypes.number,
+		]),
 
 		// navigation
 		nav: PropTypes.bool,
